@@ -17,7 +17,7 @@ function print(xhrtext){
 
 }
 
-
+// Check it out; also ugly
 class Line {
 
     /**
@@ -329,6 +329,8 @@ class Extension {
    */
   
   (() => new Extension())();
+
+  // TODO: allow user to input a source code folder
 
   const API_URL = 'http://127.0.0.1:5000/';
   const input = JSON.stringify(keepcomment);
