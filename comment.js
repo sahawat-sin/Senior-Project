@@ -175,7 +175,7 @@ class Comment {
       for (var index = 0, length = this.nodes.length; index < length; index++) {
         var node = this.nodes[index];
         var line = new Line(node, index);
-        keepcomment.push(line.text + " newlinecom ");
+        keepcomment.push(line.text + " newnnnn ");
   
         this.lines.push(line);
   
