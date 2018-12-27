@@ -33,6 +33,8 @@ class Line {
       this.parentNode = node.parentNode;
     }
   
+  // XXX add exceptions
+  
     /**
      * Render line (adds comment style).
      * @public
