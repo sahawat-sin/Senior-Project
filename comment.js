@@ -33,7 +33,7 @@ class Line {
       this.parentNode = node.parentNode;
     }
   
-  // XXX add exceptions
+// TODO: Add empty placeholder here?
   
     /**
      * Render line (adds comment style).
