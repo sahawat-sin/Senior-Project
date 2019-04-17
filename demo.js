@@ -58,7 +58,7 @@ class Line {
       //delete this.comments;
     }
   }
-
+//TODO: improve this hack!
 class Extension {
 
     constructor() {
@@ -80,9 +80,8 @@ class Extension {
       });
     }
 
-  
+  // SSS FIXME: Incomplete!
     render() {
-        // SSS FIXME: Incomplete!
       this.file = new File();
       this.comments = this.file.return_comment();
       
@@ -204,7 +203,6 @@ class Extension {
     
     var count = Object.keys(comments).length;
     console.log(count);
-//TODO: improve this hack!
     for (i = 0; i < count; i++) { 
       var num = i.toString();
       console.log(comments[num]["comment"]);
@@ -231,14 +229,13 @@ class Extension {
     }
   
   }
-
+// todo : this eventually needs to be removed
   function sendcommentstoServer(comment, command)
   {
     const API_URL = 'http://127.0.0.1:5000/';
     const input = JSON.stringify(comment);
     const xhr = new XMLHttpRequest();
     const data = new FormData();
-    // todo : this eventually needs to be removed
     data.append('input', input);
   
     xhr.open('POST', API_URL, true);
