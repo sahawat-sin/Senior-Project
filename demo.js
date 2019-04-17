@@ -8,7 +8,7 @@ class Line {
     }
   
   }
- // not sure what could be the need of this...
+ // todo : remove
   class File {
   
   
@@ -32,7 +32,7 @@ class Line {
       }
     }
   
-
+//TODO: is this really necessary????
     show2()
     {
         
@@ -69,7 +69,7 @@ class Extension {
       this.observe();
       
     }
-  // TODO Ignore for now.
+  // TODO: Replace this with a more elegant solution.
     observe() {
       this.observer = new MutationObserver(() => {
         this.destroy();
@@ -97,7 +97,7 @@ class Extension {
  
     }
   }
-// TODO: Figure out how this can happen and possibly remove
+//TODO: terrible implementation!
   function highlightDesign(comments) 
   {
     
@@ -131,7 +131,7 @@ class Extension {
     }
   
   }
-// need to reexamine this
+//TODO: use these in methods above
   function unhighlightDesign(comments) {
     
     var count = Object.keys(comments).length;
@@ -164,7 +164,7 @@ class Extension {
     }
   
   }
-// FIXME: not very efficient
+// TODO: RESTRICT VIOLATION
   function highlightReq(comments) 
   {
     
@@ -205,7 +205,7 @@ class Extension {
     
     var count = Object.keys(comments).length;
     console.log(count);
-
+//TODO: improve this hack!
     for (i = 0; i < count; i++) { 
       var num = i.toString();
       console.log(comments[num]["comment"]);
@@ -239,7 +239,7 @@ class Extension {
     const input = JSON.stringify(comment);
     const xhr = new XMLHttpRequest();
     const data = new FormData();
-    
+    // todo : this eventually needs to be removed
     data.append('input', input);
   
     xhr.open('POST', API_URL, true);
