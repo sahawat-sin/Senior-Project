@@ -30,7 +30,6 @@ class Line {
       }
     }
   
-//TODO: is this really necessary????
     show2()
     {
         
@@ -57,7 +56,7 @@ class Line {
       //delete this.comments;
     }
   }
-//TODO: improve this hack!
+
 class Extension {
 
     constructor() {
@@ -67,7 +66,6 @@ class Extension {
       this.observe();
       
     }
-  // TODO: Replace this with a more elegant solution.
     observe() {
       this.observer = new MutationObserver(() => {
         this.destroy();
@@ -79,7 +77,6 @@ class Extension {
       });
     }
 
-  // SSS FIXME: Incomplete!
     render() {
       this.file = new File();
       this.comments = this.file.return_comment();
@@ -94,7 +91,6 @@ class Extension {
  
     }
   }
-//TODO: terrible implementation!
   function highlightDesign(comments) 
   {
     
@@ -128,7 +124,6 @@ class Extension {
     }
   
   }
-//TODO: use these in methods above
   function unhighlightDesign(comments) {
     
     var count = Object.keys(comments).length;
@@ -161,7 +156,6 @@ class Extension {
     }
   
   }
-// TODO: RESTRICT VIOLATION
   function highlightReq(comments) 
   {
     
