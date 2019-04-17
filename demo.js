@@ -6,7 +6,6 @@ class Line {
       this.text = node.textContent;
       this.parentNode = node.parentNode;
     }
-  
   }
  // todo : remove
   class File {
