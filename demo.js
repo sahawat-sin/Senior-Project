@@ -26,7 +26,6 @@ class Line {
       for (var index = 0, length = this.nodes.length; index < length; index++) {
         var node = this.nodes[index];
         var line = new Line(node, index);
-        this.comments.push(line.text + " newlinecom ");
 
       }
     }
