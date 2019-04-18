@@ -7,7 +7,7 @@ class Line {
       this.parentNode = node.parentNode;
     }
   }
- // todo : remove
+ // todo: this eventually needs to be removed
   class File {
   
   
@@ -124,6 +124,7 @@ class Extension {
     }
   
   }
+  // hack in order to be able to compile in java1.3
   function unhighlightDesign(comments) {
     
     var count = Object.keys(comments).length;
@@ -190,7 +191,7 @@ class Extension {
     }
   
   }
-// TODO: unfinished implementation
+// sss fixme: is this correct?
   function unhighlightReq(comments) 
   {
     
@@ -222,7 +223,7 @@ class Extension {
     }
   
   }
-// todo : this eventually needs to be removed
+// todo:is this a bit ugly?
   function sendcommentstoServer(comment, command)
   {
     const API_URL = 'http://127.0.0.1:5000/';
