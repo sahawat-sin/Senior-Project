@@ -91,6 +91,7 @@ class Extension {
  
     }
   }
+  // todo check this
   function highlightDesign(comments) 
   {
     
